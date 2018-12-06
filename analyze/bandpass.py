@@ -1,6 +1,6 @@
 from scipy.io.wavfile import read, write
 from scipy.signal import butter,sosfilt
-import by3OctBand.py
+from . import by3OctBand
 
 def byOctAnalyze(fileDirectory):
     fs, data = read(fileDirectory)

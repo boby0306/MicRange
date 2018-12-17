@@ -5,9 +5,8 @@ import numpy as np
 from . import by3OctBand
 
 
-def ene2dB(by3OctEne, power):
-    return 10 * np.log10((by3OctEne / power))
-
+def ene2dB(Ene, Cali):
+    return 10 * np.log10((Ene / Cali))
 
 def getpower(fileDirectory):
     fs, data = read(fileDirectory)
